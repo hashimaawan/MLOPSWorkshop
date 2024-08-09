@@ -10,10 +10,7 @@ on:
 
 jobs:
   build:
-    runs-on: ${{ matrix.os }}  # Use the matrix variable for the OS
-    strategy:
-      matrix:
-        os: [ubuntu-latest, windows-latest]  # List the OS you want to test on
+    runs-on: windows-latest  # Specify Windows as the OS for the job
 
     steps:
     - name: Checkout code
